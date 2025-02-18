@@ -1,5 +1,5 @@
 
-# UNFORTUNATELY
+# A note before you start reading.
 This repository contains a comprehensive README for Arborist, an AI-driven tool for code analysis, debugging, and visualization. Although the codebase is private, this document outlines its architecture, features, and technical design for those interested in the project.
 
 <h1 align="center">Arborist: Revolutionizing Code Analysis</h1><br>
