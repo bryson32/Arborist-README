@@ -147,8 +147,6 @@ Arborist is designed to enhance **code analysis, generation, and visualization**
 
 # Usage
 
-## 🔄 User Flow
-
 ### 1️⃣ Setup  
 - The user **logs into Arborist** or continues as a **guest**.  
 
@@ -187,13 +185,12 @@ Arborist is designed to enhance **code analysis, generation, and visualization**
 🚀 **With Arborist, coding is faster, smarter, and more intuitive than ever.**  
 
 
+
 ## Check Out The Homepage!
 
 If youre curious, our beautiful front page is still up (built by yours truly). Check it out here.
 
 - [Arborist](https://arborist.studio)
-
-
 <p/><br>
 
 # Team & Contributors
