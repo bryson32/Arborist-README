@@ -35,10 +35,14 @@ Codebase Context Code Generation, Debugging, and Visualization for Seamless Prog
 
 <p/><br>
 
-# Overview
-Arborist is an innovative tool designed to make programming more accessible and efficient. By leveraging voice commands, Arborist streamlines code generation, debugging, and visualization. Featuring advanced text-to-speech (TTS) and speech-to-text (STT) capabilities, Arborist enables seamless and natural interaction, enhancing accessibility for all users.
+## Overview
 
-Our powerful diagram generation feature allows you to visualize code structures and flow, making it easier to understand and debug complex codebases. Additionally, the unique branching chat functionality ensures that the chatbot remains contextually aware and efficient, providing relevant assistance based on your current coding tasks.
+Arborist is a cutting-edge development tool designed to enhance **code generation, debugging, and visualization**. It provides an intuitive way to interact with your codebase, streamlining complex workflows and improving efficiency.
+
+With **intelligent diagram generation**, Arborist helps developers **visualize code structures and flow**, making it easier to navigate, debug, and optimize large projects. The **branching chat system** ensures that every interaction remains contextually aware, allowing users to revisit previous states, explore alternative solutions, and maintain a seamless workflow.
+
+Whether you're tackling a complex codebase or refining existing logic, Arborist empowers developers with **AI-driven insights, real-time visualizations, and an adaptive chat interface** to maximize productivity.
+
 
 <p/><br>
 
