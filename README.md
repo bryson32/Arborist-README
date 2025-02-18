@@ -25,13 +25,10 @@ Codebase Context Code Generation, Debugging, and Visualization for Seamless Prog
 ### Table of Contents
 
 1. [Overview](#overview)
-2. [Getting Started](#getting-started)
-3. [Features](#features)
-4. [Usage](#usage)
-5. [API Documentation](#api-documentation)
-6. [Architecture](#architecture)
-7. [Development](#development)
-8. [Team & Contributors](#team--contributors)
+2. [Features](#features)
+3. [Usage](#usage)
+4. [Architecture](#architecture)
+5. [Team & Contributors](#team--contributors)
 
 <p/><br>
 
