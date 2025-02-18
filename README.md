@@ -123,9 +123,25 @@ Arborist is designed to enhance **code analysis, generation, and visualization**
 4️⃣ **Visualization & Feedback** – Results are **displayed, summarized, and visualized** for better understanding.  
 
 ## **Tech Stack**  
-- **Next.js** – Modern React framework for frontend.  
-- **Node.js** – Backend runtime environment.  
-- **ShadCN** – Component library for UI. 
+
+### **Frontend**  
+- **Next.js** – React-based framework for server-side rendering and static site generation.  
+- **React** – Core library for building interactive UIs.  
+- **Tailwind CSS** – Utility-first CSS framework for styling.  
+- **ShadCN** – UI component library built on Radix UI for modern design.  
+- **Framer Motion** – Animation library for smooth UI transitions.  
+
+### **Backend & APIs**  
+- **Node.js** – JavaScript runtime for server-side execution.  
+- **Express.js** – Lightweight backend framework for handling API requests.  
+- **MongoDB** – NoSQL database for storing application data.  
+- **Google Cloud AI** – Integrates **Google Gemini, Speech-to-Text, and Text-to-Speech APIs** for AI-powered interactions.  
+
+### **AI & Processing**  
+- **@ai-sdk/google** – AI SDK for Google Gemini model interactions.  
+- **@google-cloud/speech** – Converts audio to text for AI-driven insights.  
+- **@google-cloud/text-to-speech** – Generates speech from text for voice feedback.  
+- **Mermaid.js & D3.js** – Visualization libraries for generating code structure diagrams.  
 
 <p/><br>
 
