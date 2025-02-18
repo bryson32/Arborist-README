@@ -96,41 +96,39 @@ $PROJECT_ROOT
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-### System Architecture
+# System Architecture  
 
-Arborist is designed to facilitate easy understanding, analysis, and writing of code through voice commands, catering to both accessibility needs and enhancing productivity for all users. The system is divided into several components that work together to achieve this goal.
+Arborist is designed to enhance **code analysis, generation, and visualization** by integrating AI-driven insights with an intuitive developer interface. The system is structured into multiple components, working together to provide **intelligent automation and deep project awareness**.
 
-- **Frontend**: Built with Next.js, handling the user interface and interaction.
-- **Backend**: Provides API endpoints for voice recognition and command execution.
-- **Voice Recognition Engine**: Converts spoken commands into text.
-- **Command Processor**: Interprets text commands and interacts with the code editor.
-- **Visualization Module**: Generates diagrams based on the code structure.
+## **Core Components**  
 
-### Component Descriptions
+### 🖥 **Frontend**  
+- Built with **Next.js**, providing an interactive UI for project management, code visualization, and AI-assisted development.  
 
-- **Frontend**: Built with Next.js, handling the user interface and interaction.
-- **Backend**: Provides API endpoints for voice recognition, command execution, and code processing.
-- **Voice Recognition Engine**: Converts spoken commands into text.
-- **Instruction Elaborator**: Elaborates on user instructions to provide clear and detailed inputs for the code generation model.
-- **Primary Code Model**: Generates code based on user instructions.
-- **Change Summarizer**: Analyzes and summarizes changes made to the code, providing a summary to the user.
-- **Visualization Module**: Generates diagrams to help users understand complex codebases, utilizing tools like dot-to-ascii for visual representation.
+### ⚙️ **Backend**  
+- API layer that handles **code execution, AI processing, and data management**.  
 
-### Data Flow
+### 🔍 **Command Processor**  
+- Parses and processes **user instructions**, converting natural language into structured programming actions.  
 
-The data flow in Arborist involves multiple stages to ensure accurate code generation, debugging, and visualization:
+### 📊 **Visualization Module**  
+- Generates **real-time diagrams** to help developers understand **code structure, execution flow, and dependencies**.  
 
-1. **User Interaction**: Users provide voice commands or regular text input through the frontend.
-2. **Instruction Elaboration**: The Instruction Elaborator refines user commands for clarity and precision.
-3. **Code Generation**: The refined instructions are sent to the Primary Code Model to generate the appropriate code/response.
-4. **Code Analysis and Summarization**: The generated code or response is analyzed for correctness and potential bugs. The Change Summarizer then creates a summary of the changes.
-5. **Feedback to User**: The summarized changes are presented to the user and optionally can be read aloud using TTS for accessibility.
+### 🤖 **AI Code Model**  
+- Interprets user inputs to generate, refactor, and debug code dynamically.  
+- Summarizes **modifications, optimizations, and bug fixes** for review.  
 
-### Dependencies
+## **Data Flow**  
 
-- **Next.js**: A React framework for building server-side rendered and static web applications.
-- **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine.
-- **shadcn**: A utility-first CSS framework for rapidly building custom user interfaces.
+1️⃣ **User Interaction** – Users input **natural language commands** or code queries via the frontend.  
+2️⃣ **Instruction Processing** – AI **refines instructions** to ensure clarity and intent.  
+3️⃣ **Code Execution & Analysis** – The system **generates, debugs, or modifies code** based on user input.  
+4️⃣ **Visualization & Feedback** – Results are **displayed, summarized, and visualized** for better understanding.  
+
+## **Tech Stack**  
+- **Next.js** – Modern React framework for frontend.  
+- **Node.js** – Backend runtime environment.  
+- **ShadCN** – Component library for UI. 
 
 <p/><br>
 
