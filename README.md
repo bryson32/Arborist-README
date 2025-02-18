@@ -1,8 +1,6 @@
 
 # UNFORTUNATELY
-I cannot share the codebase with you, for obvious reasons, but for anyone who was curious enough to click onto this repository, heres a comprehensive README I had written for the project before we had to discontinue operations.
-
-I hope you find it interesting!
+This repository contains a comprehensive README for Arborist, an AI-driven tool for code analysis, debugging, and visualization. Although the codebase is private, this document outlines its architecture, features, and technical design for those interested in the project.
 
 <h1 align="center">Arborist: Revolutionizing Code Analysis</h1><br>
 <p align="center">
@@ -45,73 +43,28 @@ Our powerful diagram generation feature allows you to visualize code structures 
 <p/><br>
 
 # Features
-## 🚀 Voice-Activated Code Generation
-Harness the power of your voice to generate code quickly and effortlessly. Perfect for speeding up your workflow and making coding more accessible.
+
+## 📌 Full Codebase Context  
+Upload entire folders or link GitHub repositories, allowing Arborist to analyze your **entire file tree**. This enables AI-powered **code understanding, modification, and debugging** with full project awareness.  
 
 ## 📊 Diagram Generation
 Automatically create detailed diagrams to visualize and understand complex codebases. This feature helps you see the bigger picture and navigate your projects with ease.
 
-## 🔄 Prompt Branching
-Our branching chat feature allows you to revisit previous points in your conversation without losing context. This ensures a smooth and continuous workflow, making it easier to manage your coding tasks.
+## 🔄 Prompt Branching  
+Navigate conversations like a **version-controlled chat history**.  
+- 📌 **Create Nodes** – Every response generates a node for easy reference.  
+- 🔄 **Branch Off at Any Point** – Explore multiple solutions without losing progress.  
+- ⏳ **Time Machine for Chats** – Revert to any point in the conversation instantly.  
 
-## 📈 Visualization Modules
-Generate visual representations of your code structures and flow. These visual aids are invaluable for better comprehension and documentation, making your code more maintainable and easier to share.
+## 📈 Stunning Visualizations  
+Gain insights into your **project's history and structure** with AI-driven visual representations.  
+- 🔍 **Track Code Changes** – Identify patterns, contributions, and refactors over time.  
+- 📁 **Git Integration** – Works with projects containing a `.git` folder to analyze commits.  
+- 🖥 **Visual Storytelling** – See the evolution of your codebase at a glance.  
 
-# Getting Started
+## 🚀 Voice-Activated Code Generation
+Harness the power of your voice to generate code quickly and effortlessly. Perfect for speeding up your workflow and making coding more accessible.
 
-### Prerequisites
-
-Before you begin, ensure you have Node.js installed on your machine. You can download it from [nodejs.org](https://nodejs.org/).
-
-
-### Installation
-
-To install Arborist, follow these steps:
-
-1. **Clone the Repository**
-   
-   First, clone the repository from GitHub:
-
-   ```bash
-   git clone https://github.com/Rivaan-P/Voicecode-web.git
-   
-2. **Navigate to the Project Directory**
-
-    Locate the cloned repository in your files and open in the CLI
-    
-3. **Install Dependencies**
-
-    ```bash
-    npm install
-    # or
-    yarn install
-    # or
-    pnpm install
-    # or
-    bun install
-    ```
-
-    ```Install Gource on Mac
-    brew install gource
-    ```
-
-4. **Then, run the development server**
-
-    ```bash
-    npm run dev
-    # or
-    yarn dev
-    # or
-    pnpm dev
-    # or
-    bun dev
-    ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file thanks to hot-reloading.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 <p/><br>
 
 # Architecture
@@ -179,51 +132,54 @@ The data flow in Arborist involves multiple stages to ensure accurate code gener
 
 # Usage
 
-### User Flow
-1. **Setup**
-  - The user logs into Arborist, or continues as a guest
+## 🔄 User Flow
 
-2. **Provide Intructions**
-  - The user speaks or types in a command, for example "Create a new function called helloWorld", or "Whats causing the issue on line 234 in example.cpp?"
-  - The Instruction Elaborator refines the command by asking clarifying questions to the user to ensure clarity and accuracy in its response. For example, it might ask, "what would you like this function to do?", or "Where would you like this function to go?"
-  - Or for a debug example, "Whats the error message?"
+### 1️⃣ Setup  
+- The user **logs into Arborist** or continues as a **guest**.  
 
-3. **Response**
-  - The Primary Code Model processes the refined instructions and generates the appropriate code/analysis 
-  - In this process, the model is working hard to make sure no issues or bugs go through to the final output
+### 2️⃣ Provide Instructions  
+- The user **speaks or types a command**, such as:  
+  - `"Create a new function called helloWorld"`  
+  - `"What's causing the issue on line 234 in example.cpp?"`  
+- The **Instruction Elaborator** refines the command by **asking clarifying questions** to ensure precision.  
+  - Example: _"What should this function do?"_ or _"Where should it go?"_  
+  - For debugging: _"What’s the error message?"_  
 
-4. **Output**
-  - If a command was made to edit any of the code, the change summarizer will provide a precise summary of changes, and this response will be available to be read aloud using our TTS feature.
+### 3️⃣ AI Processing & Response  
+- The **Primary Code Model** interprets the refined instructions and **generates relevant code or analysis**.  
+- AI ensures **code correctness** by **detecting errors and optimizing output** before finalizing.  
 
-5. **Visualization**
-  - Our powerful visualization feature can be accessed at any time, given your code base is uploaded to the UI. The user can request a visualization of the code structure at any given moment, and the visualization module will generate impressive diagrams to help the user understand the codebase.- Whether it be a new onboarding engineer that wants to learn a large codebase quickly, or a current team member who just wants to analyze changes his peers made while he was on vacation, our diagram generation feature provides a brilliant solution to the time consuming task of understanding large and complex codebases.
-  
-6. **Our Unique Branching Feature**
-  - To ensure the chatbot remains contextually precise at all times, we have implemented a branching tree for chats, accessible and viewable in the bottom left of the UI.
-  - The tree consists of nodes, where each node represents a point in your chat history. At first when youre proceeding through the chat bot normally, this tree will generate a straight line of nodes, but if at any point you decide you need to go to a previous point in your chat without needing to completely delete your current session, for the sake of context for the AI, you can click on a node, and it will bring you back to that point in history. (Note that although any chats that were created past this node that you clicked will dissapear, they are still there, you just need to click back on the most recent node that you were on before you clicked to this new one)
-  - The use cases for this feature might not seem obvious at first, but as you work through your code base using Arborist, you will surely encounter a scenario where this feature proves beneficial. For example, what if you had Arborist change up a file to write a new method, but then realized you wanted to review the initial setup before the changes were made? With the branching feature, you can easily navigate back to the point before the changes without losing the context of your current session. Combined with the previously mentioned diagram generation and our models amazing debugging capabilities, this allows you to compare the previous and new states of the code effortlessly.
+### 4️⃣ Output & Change Summary  
+- If Arborist **modifies code**, the **Change Summarizer** provides a **clear summary of edits**.  
+- Changes can be **read aloud via TTS** for accessibility and ease of review.  
 
-### The Interface/UI
+### 5️⃣ Interactive Visualizations  
+- Users can request **real-time visual representations** of their codebase.  
+- The **Visualization Module** generates **interactive diagrams**, aiding in:  
+  - **Onboarding new engineers** to complex codebases.  
+  - **Analyzing recent changes** without manually reviewing large files.  
 
-## Learn More
+### 6️⃣ Contextual Prompt Branching  
+- Every AI response **creates a node** in a branching history tree, allowing users to:  
+  - 🔄 **Revisit any previous point** without losing progress.  
+  - 🔍 **Explore different solutions** in parallel branches.  
+  - ⏳ **Compare past and new states** of the code effortlessly.  
+- This is **especially useful** when:  
+  - Reviewing previous configurations **before applying changes**.  
+  - Debugging multiple potential solutions **without resetting progress**.  
+- Users can seamlessly **jump between branches**, ensuring **no insights are lost** while exploring different coding approaches.  
 
-To learn more about Next.js, take a look at the following resources:
+🚀 **With Arborist, coding is faster, smarter, and more intuitive than ever.**  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Check Out The Homepage!
+
+If youre curious, our beautiful front page is still up (built by yours truly). Check it out here.
+
+- [Arborist](https://arborist.studio)
+
 
 <p/><br>
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-<!--  [DEMO]: https://github.com/Rivaan-P/Voicecode-web/assets/69108782/2104bca4-b012-4737-a66d-78344f833900 -->
-[DEMO]: https://github.com/Rivaan-P/Voicecode-web/assets/69108782/83c0809a-d84a-4241-ac6e-7afb0cdb13f3
 
 # Team & Contributors
 Arborist wouldn't have existed without the hard work and dedication of our amazing team and contributors. Below is a list of the key members who have made significant contributions to the project:
@@ -239,7 +195,7 @@ Arborist wouldn't have existed without the hard work and dedication of our amazi
   <tr>
     <td align="center"><a href="https://github.com/luqmanabdi"><img src="https://avatars.githubusercontent.com/luqmanabdi" width="100px;" alt=""/><br /><sub><b>Luqman Abdi</b></sub></a><br />Cinematographer</td>
     <td align="center"><a href="https://github.com/coolchigi"><img src="https://avatars.githubusercontent.com/coolchigi" width="100px;" alt=""/><br /><sub><b>Chigozirim Eke</b></sub></a><br />Full-stack Developer</td>
-    <td align="center"><a href="https://github.com/bryson32"><img src="https://avatars.githubusercontent.com/bryson32" width="100px;" alt=""/><br /><sub><b>Bryson Morgan</b></sub></a><br />Full-Stack Developer</td>
+    <td align="center"><a href="https://github.com/bryson32"><img src="https://avatars.githubusercontent.com/bryson32" width="100px;" alt=""/><br /><sub><b>Bryson Morgan</b></sub></a><br />Lead Front End/Full-Stack Developer</td>
     <td align="center"><a href="https://github.com/setelcorn"><img src="https://avatars.githubusercontent.com/setelcorn" width="100px;" alt=""/><br /><sub><b>Cornelius Pang</b></sub></a><br />Lead Backend Developer</td>
   </tr>
 </table>
