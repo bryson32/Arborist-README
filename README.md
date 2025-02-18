@@ -1,4 +1,3 @@
-
 # A note before you start reading.
 This repository contains a comprehensive README for Arborist, an AI-driven tool for code analysis, debugging, and visualization. Although the codebase is private, this document outlines its architecture, features, and technical design for those interested in the project.
 
@@ -189,9 +188,8 @@ Arborist is designed to enhance **code analysis, generation, and visualization**
 ## Check Out The Homepage!
 
 If youre curious, our beautiful front page is still up (built by yours truly). Check it out here.
-
 - [Arborist](https://arborist.studio)
-<p/><br>
+
 
 # Team & Contributors
 Arborist wouldn't have existed without the hard work and dedication of our amazing team and contributors. Below is a list of the key members who have made significant contributions to the project:
