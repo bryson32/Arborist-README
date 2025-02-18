@@ -1,6 +1,12 @@
+
+# UNFORTUNATELY
+I cannot share the codebase with you, for obvious reasons, but for anyone who was curious enough to click onto this repository, heres a comprehensive README I had written for the project before we had to discontinue operations.
+
+I hope you find it interesting!
+
 <h1 align="center">Arborist: Revolutionizing Code Analysis</h1><br>
 <p align="center">
-  <img alt="Arborist Overview" src="./arborist.png"/>
+  <img alt="Arborist Overview" src="./arboristFrontPage.png"/>
 </p>
 
 <p align="center">
@@ -113,22 +119,22 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 ```
 $PROJECT_ROOT
 ├───src
-|   ├───app
-|   │   ├───api
-|   │   │   └───chat        // for the gemini chat api
-|   │   ├───chat            // chat page
-|   │   │   └───settings
-|   │   ├───login
-|   |   └───page.js         // main page
-|   ├───components
-|   │   ├───branchingtree
-|   |   ├───chatui
-|   │   ├───filedirectory
-|   │   ├───navbar          // logo, navMenu, MenuBar
-|   │   ├───ui              // shadcn library
-|   │   └───Resizable.jsx   // for the /chat resizable
-|   ├───hooks               // hooks for shortcut keyboard
-|   └───lib                 // shadcn utils
+│ ├───app // Core application logic (pages, API, etc.)
+│ │ ├───api // Backend API (e.g., chat API)
+│ │ ├───chat // Chat interface & settings
+│ │ ├───... // Other app-related pages (studio, waitlist, sharing)
+│ │ ├───page.jsx // Main application entry
+│ │ └───layout.jsx // Page structure
+│ ├───components // UI components
+│ │ ├───chatui // Chat interface elements
+│ │ ├───navbar // Navigation bar
+│ │ ├───ui // ShadCN UI components
+│ │ ├───... // Other reusable UI components
+│ │ └───Resizable.jsx // Resizable chat panel
+│ ├───lib // Core utilities and helpers
+│ │ ├───hooks // Custom React hooks
+│ │ ├───db // Database utilities
+│ │ ├───... // Other utility functions (state mgmt, helpers)
 ```
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
